@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name : install python 
+        run : pip install pandas
+
 
   second_job2:
     name: second_job
