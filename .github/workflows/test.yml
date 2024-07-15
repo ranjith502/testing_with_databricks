@@ -1,0 +1,10 @@
+name: first_testing
+
+on: [push]
+
+jobs:
+  runs-on: ubuntu-latest
+  first_job:
+    name: first_job
+  second_job:
+    name: second_job
