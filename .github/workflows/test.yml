@@ -11,6 +11,11 @@ jobs:
         uses: actions/checkout@v2
       - name : install python 
         run : pip install pandas
+      - name : install databricks cli
+        run : curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
+      - name : check the datbrick cli version
+        run : databricks version
+
 
 
   second_job2:
